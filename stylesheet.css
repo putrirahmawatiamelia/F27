@@ -93,6 +93,104 @@ header {
     background-color: #092499;
 }
 
+.main-wrapper {
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #5f5d60;
+  border-bottom: tomato solid 1px;
+}
+
+.container-main {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.pro{
+  padding-top: 15px;
+}
+
+.pro-icon p{
+  font-weight: bold;
+}
+
+.description{
+  padding-bottom: 30px;
+}
+
+.icon {
+  width: 124px;
+}
+
+.feature-contents h1{
+  font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#container {
+  width: 300px;
+  margin: 0 55px;
+  display: inline-block;
+}
+
+.thumbnail {
+  -webkit-backface-visibility: hidden;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 15px 50px rgba(0,0,0,.5);
+}
+.thumbnail img {
+  display: block;
+  max-width: 100%;
+  transition: opacity .2s ease-in-out;
+}
+.thumbnail:hover img {
+  opacity: .5;
+}
+.thumbnail::after,
+.thumbnail::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  transition: transform .4s ease-out;
+  color: #fff;
+}
+.thumbnail::after {
+  content: attr(data-title);
+  top: 0;
+  padding-top: 55px;
+  transform: translateY(-100%) scale(.8);
+  background: rgba(0,0,0,.4);
+  font-size: 50px;
+  font-weight: 300;
+  font-family: Merriweather, serif;
+  text-align: center;
+}
+.thumbnail:hover::after,
+.thumbnail:hover::before {
+  transform: translateY(0%) scale(1);
+}
+
 footer {
   background-color: #031e63;
   color: #fff;
@@ -121,4 +219,39 @@ footer {
 .footer-list li a{
   color: white;
   list-style-type: none;
+}
+
+.booking {
+  
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.heading-button{
+  border-top: tomato solid 1px;
+  padding-top: 30px;
+}
+.heading-button h3{
+  
+  font-weight: normal;
+  padding-bottom: 40px; 
+}
+
+.container-button {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.message:active{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: rgba(235, 102, 35, 0.7);
+  cursor: pointer;
+  box-shadow: 0 7px rgba(235, 102, 35, 1);
 }
